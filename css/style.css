@@ -91,3 +91,23 @@ main{
 .clicked{
   background-color: rgb(114, 173, 233);
 }
+
+
+/* footer*/
+
+footer{
+  width: 100%;
+  height: 50px;
+}
+
+.container-footer{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.container-footer a{
+  color: blue
+}
