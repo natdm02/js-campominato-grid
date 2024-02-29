@@ -1,14 +1,74 @@
-body{
-  background-color: black;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
 /* ----------------- */
 
 
-.container{
-  width: 800px;
-  margin: 60px auto;
+/* header  */
 
-  height: 800px;
+.container-header{
+  width: 100%;
+  margin: 0 auto;
+  height: 70px;
+}
+
+.row{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.logo{
+  margin-right: 10px;
+}
+
+.logo img{
+  width: 100%;
+}
+
+.button, select{
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+select{
+  background-color: rgb(236, 236, 236);
+  padding: 3px 40px 3px 0;
+  margin: 0px 10px 0px 2px;
+}
+
+.button{
+  padding: 3px 20px 3px 20px;
+  margin-right: 20px;
+}
+
+.button:active{
+  background-color: rgba(128, 128, 128, 0.528);
+}
+
+/* main  */
+main{
+  background-color: black;
+}
+
+.container{
+  width: 700px;
+  margin: 0 auto;
+  background-color: blue;
+  height: 700px;
 }
 
 .grid{
@@ -22,10 +82,12 @@ body{
   width: calc(100% / 10);
   height: calc(100% / 10);
   cursor: pointer;
-  background-color:blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid black;
 }
 
 .clicked{
-  background-color: aqua;
+  background-color: rgb(114, 173, 233);
 }
