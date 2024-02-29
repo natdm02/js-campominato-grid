@@ -10,5 +10,10 @@ let grid = document.getElementById('grid');
 
 for(let i=0; i<100; i++){
   const square = createGrid();
+
+  square.addEventListener('click', function(){
+    this.classList.add('clicked');
+  });
+
   grid.appendChild(square);
 }
